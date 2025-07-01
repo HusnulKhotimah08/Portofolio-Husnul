@@ -1,0 +1,128 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #1a001a;
+  color: #ffe6f2;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  background: #330033;
+}
+.logo {
+  color: #ff99cc;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.menu {
+  display: flex;
+  gap: 20px;
+}
+.menu a {
+  color: #ffb3d9;
+  text-decoration: none;
+}
+.menu a:hover {
+  color: #fff;
+}
+.hero {
+  margin-top: 40px;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #ff99cc;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.5rem;
+  color: #ff99cc;
+}
+.cursor {
+  display: inline-block;
+  background-color: #ff99cc;
+  width: 2px;
+  animation: blink 0.7s steps(2, start) infinite;
+  height: 1.2em;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+.skills {
+  padding: 2rem 1rem;
+}
+.skills-tabs {
+  margin-bottom: 1.5rem;
+}
+.tab-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: transparent;
+  color: #ffb3d9;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.tab-button.active {
+  border-bottom: 2px solid #ff99cc;
+  color: #ffffff;
+}
+.skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.skill-item {
+  border: 1px solid #ff99cc;
+  border-radius: 10px;
+  padding: 0.8rem 1.2rem;
+  font-weight: bold;
+  background-color: #330033;
+  color: #ffe6f2;
+  box-shadow: 0 0 8px #ff66b2;
+  transition: transform 0.2s ease;
+}
+.skill-item:hover {
+  transform: scale(1.05);
+  background-color: #660066;
+}
+.hidden {
+  display: none;
+}
+
+.skill-item i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skill-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
